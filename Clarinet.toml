@@ -1,0 +1,48 @@
+[project]
+name = 'Clarity-Based-Notary-Service'
+description = ''
+authors = []
+telemetry = true
+cache_dir = '.\.cache'
+requirements = []
+[contracts.Clarity-Based-Notary-Service]
+path = 'contracts/Clarity-Based-Notary-Service.clar'
+clarity_version = 3
+epoch = 3.1
+
+[contracts.document-expiration]
+path = 'contracts/document-expiration.clar'
+clarity_version = 3
+epoch = 3.1
+
+[contracts.document-access-control]
+path = 'contracts/document-access-control.clar'
+clarity_version = 3
+epoch = 3.1
+
+[contracts.document-validation]
+path = 'contracts/document-validation.clar'
+clarity_version = 3
+epoch = 3.1
+
+[contracts.document-dispute]
+path = 'contracts/document-dispute.clar'
+clarity_version = 3
+epoch = 3.1
+
+[contracts.document-cosign]
+path = 'contracts/document-cosign.clar'
+clarity_version = 3
+epoch = 3.1
+[repl.analysis]
+passes = ['check_checker']
+
+[repl.analysis.check_checker]
+strict = false
+trusted_sender = false
+trusted_caller = false
+callee_filter = false
+
+[repl.remote_data]
+enabled = false
+api_url = 'https://api.hiro.so'
